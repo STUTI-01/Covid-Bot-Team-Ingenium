@@ -29,6 +29,7 @@ def next_command(update, context):
 			final_text = final_text + "\nName: "+str(slots['district_name']) +'\n'+ "District_id: "+str(slots['district_id']) +'\n' 
 			final_text = final_text + '----------------------------------------'+'\n'
 			
+	update.message.reply_text(final_text)
 	update.message.reply_text('enter districtid:dd-mm-yyyy')
 	
 	
